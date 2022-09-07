@@ -7,8 +7,8 @@ Rest API
 """
 
 if __name__ == "__main__":
-    f_log = open("/var/log/customlog.log",r)
-    f_metric = open("/var/exporter/metrics",w)
+    f_log = open("/var/log/customlog.log","r")
+    f_metric = open("/var/exporter/metrics","w")
     f_content = f_log.read()
     if '400' in f_content:
         f_metric.write("FourHundredErrors: 1")
