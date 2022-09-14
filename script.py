@@ -15,7 +15,7 @@ app = Flask(__name__)
 def readLog():
     f_log = open("/var/log/customlog.log","r")
     f_content = f_log.read()
-    count_message = "FourHundredErrors: "+str(f_content.count("400"))
+    count_message = "FourHundredErrors: "+str(f_content.count("HTTP/1.1\" 401"))
     f_log.close()
     return count_message
 
