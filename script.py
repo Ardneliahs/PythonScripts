@@ -12,16 +12,15 @@ such as a web browser.
 """
 from flask import Flask
 app = Flask(__name__)
-if __name__ == "__main__":
+def readLog():
     f_log = open("/var/log/customlog.log","r")
-#    f_metric = open("/var/exporter/metrics","w")
     f_content = f_log.read()
     count_message = "FourHundredErrors: "+str(f_content.count("400"))
-#    f_metric.write(count_message)
     f_log.close()
-#    f_metric.close()
+    return count_message
+
+if __name__ == "__main__":
     @app.route("/metrics", methods=["GET"])
     def getMetrics():
-        return count_message
-
+        return readLog()
     app.run(port=8099)
