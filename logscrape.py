@@ -6,5 +6,5 @@ with open("sample.txt") as logfile:
   loglines = logfile.readlines()
   for lines in loglines:
     my_output = re.search(my_string,lines)
-    if len(my_output.group()) != 0:
+    if type(my_output) != "None":
       print(lines[0:20] + my_output.group())
