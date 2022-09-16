@@ -1,0 +1,5 @@
+yyyy-mm-dd hh:MM:00 processA: this is a long long line
+yyyy-mm-dd hh:MM:10 processB: well, I think I'm longer, actually. Still a nonsense, btw.
+yyyy-mm-dd hh:MM:20 processC: oh, come on. Here some hints, I have an id of: 123 56|C1F0|1234. Oh sorry, here in brackets {id: 123 56|C1F0|1234}
+yyyy-mm-dd hh:MM:30 processD: why so serious?
+yyyy-mm-dd hh:MM:40 processB: oh, that's my id: 123.'$|C1F0|5678. Oh sorry, here in brackets {id: 123.'$|C1F0|5678}
