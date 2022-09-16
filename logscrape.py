@@ -7,4 +7,4 @@ with open("sample.txt") as logfile:
   for lines in loglines:
     my_output = my_string.findall(lines)
     if len(my_output) != 0:
-      print(lines[0:19] + my_output[0])
+      print(lines[0:20] + my_output[0])
